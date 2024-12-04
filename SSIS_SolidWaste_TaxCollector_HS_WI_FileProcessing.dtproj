@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">BCCIT163L</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOe+ZBSwhxkS90dci2uxVDwAAAAACAAAAAAADZgAAwAAAABAAAAA3YXRzpteQPhy442bHU+PhAAAAAASAAACgAAAAEAAAAFn5xud9ig27CF1i0fV3HByIAAAAocNyc6KQdjEinihA2KedAbP/iGyUDwpZkXtN3hhl36ScklHpXmU5mvdErITxHRBgrUy08SyaIymAthBCjHjWtyFbUIicDLrm+9Y3b+xsdyYFPiPTUfFvy1kqyT1AiK7wOiNNDAp+cE99Jqq0jVlTN+mK77lrVPzWMp0MMi8l3NjfJ1yTO5B9kRQAAABqt7Xr0RwFPUqOf2yeN9tBealliA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOe+ZBSwhxkS90dci2uxVDwAAAAACAAAAAAADZgAAwAAAABAAAAB5botPGftiUBZQFxv7i/5mAAAAAASAAACgAAAAEAAAAOnQwa9W8uWBuKSahNr7sPqIAAAAfpzy+Q/+mNRAXkzj/2IHuuf/7bK6dqahOa74Xn/+CtgrxOoYtkORKsm2+0t2C9JyfwiTnLSp8y1nicty/4pWJ2ZS4HuCWMtOF2dZwBH+5Gpdun1znjuZSAqjATZG2Wa55PgoOahjh3olV7CAFrsdcS6636HALrfiabf5mzANBxPWRrLKqxfIyxQAAAANxquLWjL45EUCLxFw2XxltmN89A==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -43,10 +43,10 @@
                 <SSIS:Property SSIS:Name="Name">SW_TC_HighSpeed_Processing</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">36</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">37</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{DFCEF3D2-90EE-4089-BAE1-CD89FA68D9C5}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A5AA4C0E-F9D0-4A88-B408-51AA6C46440D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -63,7 +63,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">1</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">https://pascoatworkqa.pascocountyfl.lan/bccsolidwaste/Transaction/ProcessTaxCollectorFile?filename=</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">https://pascoatwork.pascocountyfl.lan/bccsolidwaste/Transaction/ProcessTaxCollectorFile?filename=</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -77,7 +77,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">1</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\bccfil01.pascocountyfl.lan\Appdirs-QA\</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\bccfil01.pascocountyfl.lan\Appdirs\</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -470,7 +470,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">BaseUrl="https://pascoatworkqa.pascocountyfl.lan/bccsolidwaste/Transaction/ProcessTaxCollectorFile?filename=2024-11-26%20%20HS_%20SolidWaste.csv&amp;paymentType=2";AuthenticationMode=Credentials;JwtClaims='{
+                    <SSIS:Property SSIS:Name="Value">BaseUrl="https://pascoatwork.pascocountyfl.lan/bccsolidwaste/Transaction/ProcessTaxCollectorFile?filename=2024-11-26%20%20HS_%20SolidWaste.csv&amp;paymentType=2";AuthenticationMode=Credentials;JwtClaims='{
   "header": {},
   "payload": {}
 }';JwtKeyFile=;CustomTokenCurlFile=;CustomTokenFindStrategy=JPath;CustomTokenFindExpression=;CustomTokenExpiry=0;AwsSignatureVersion=Version4;AwsSignatureMethod=HmacSHA1;AwsAccessKey=;AwsRegion=;AwsServiceName=;AzureOAuthType=ClientCredentials;AzureTenantId=;AzureClientId=;AzureCertificateLocation=Store;AzureCertificateThumbprint=;AzurePathToCertificate=;GoogleServiceAccount=;GoogleCertificateLocation=Store;GoogleCertificateThumbprint=;GooglePathToCertificate=;GoogleScope=;AzureScope=;PathToTokenFile=;AccessTokenRequestLocation=HttpHeader;Domain=;UserName=;ProxyMode=NoProxy;ProxyUsername=;ProxyServer=;ProxyServerPort=0;ThrottleRate=0;ThrottleRateUnit=PerSecond;ServiceTimeout=120;RetryOnIntermittentErrors=True;AllowAutoRedirect=True;DropAuthorizationHeaderOnRedirects=False;ChunkSize=0;CertificateLocation=Store;CertificateThumbprint=;PathToCertificate=;IgnoreCertificateErrors=False;CustomHeaders='{
@@ -1052,7 +1052,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">HostName=ftpqa.pascocountyfl.net;Port=22;ServerType=Unknown;AuthenticationType=Password;PathToKeyFile=;UserName=UtilSWvcronQA;ProxyType=None;ProxyUsername=;ProxyServer=;ProxyServerPort=0;Timeout=120;DownloadBufferSize=49152;DownloadQueueLength=8;UploadBufferSize=49152;UploadQueueLength=8;UseLargeBuffers=True;EnableTransferQueue=True;UseSmallPackets=False;UseCompression=True;MinimumRsaKeySize=1024;KeyExchangeAlgorithms="DiffieHellmanGroup14SHA1, DiffieHellmanGroupExchangeSHA1, DiffieHellmanGroupExchangeSHA256, ECDiffieHellmanNistP256, Curve25519, DiffieHellmanOakleyGroupSHA256, DiffieHellmanOakleyGroupSHA512";MacAlgorithms="SHA1, SHA256, SHA512";EncryptionAlgorithms="TripleDES, AES, Twofish";UseLegacyGroupExchange=True;UseLegacySshRsaClientAuthentication=False;PreferredHostKeyAlgorithm=RSA;HostKeyAlgorithms="Certificate, DSS, ECDsaNistP256, ED25519, RSA";KeepAliveInterval=0;PathToLogFile=;OutputLog=False;LogLevel=Off;TransferType=Binary;Encoding=65001;UseStreamedDataTransfer=True;UseAsyncDataTransfer=True</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">HostName=ftp.pascocountyfl.net;Port=22;ServerType=Unknown;AuthenticationType=Password;PathToKeyFile=;UserName=UtilSWvcron;ProxyType=None;ProxyUsername=;ProxyServer=;ProxyServerPort=0;Timeout=120;DownloadBufferSize=49152;DownloadQueueLength=8;UploadBufferSize=49152;UploadQueueLength=8;UseLargeBuffers=True;EnableTransferQueue=True;UseSmallPackets=False;UseCompression=True;MinimumRsaKeySize=1024;KeyExchangeAlgorithms="DiffieHellmanGroup14SHA1, DiffieHellmanGroupExchangeSHA1, DiffieHellmanGroupExchangeSHA256, ECDiffieHellmanNistP256, Curve25519, DiffieHellmanOakleyGroupSHA256, DiffieHellmanOakleyGroupSHA512";MacAlgorithms="SHA1, SHA256, SHA512";EncryptionAlgorithms="TripleDES, AES, Twofish";UseLegacyGroupExchange=True;UseLegacySshRsaClientAuthentication=False;PreferredHostKeyAlgorithm=RSA;HostKeyAlgorithms="Certificate, DSS, ECDsaNistP256, ED25519, RSA";KeepAliveInterval=0;PathToLogFile=;OutputLog=False;LogLevel=Off;TransferType=Binary;Encoding=65001;UseStreamedDataTransfer=True;UseAsyncDataTransfer=True</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1157,7 +1157,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">ftpqa.pascocountyfl.net</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">ftp.pascocountyfl.net</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1593,7 +1593,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">UtilSWvcronQA</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">UtilSWvcron</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1635,10 +1635,10 @@
                 <SSIS:Property SSIS:Name="Name">SW_TC_WalkIn_Processing</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">38</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">41</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{5300D440-CDF9-453A-A6CB-7B00FBD83547}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{21BC2B03-309E-4362-A61C-71CE11DF7ADA}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1655,7 +1655,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">1</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">https://pascoatworkqa.pascocountyfl.lan/bccsolidwaste/Transaction/ProcessTaxCollectorFile?filename=</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">https://pascoatwork.pascocountyfl.lan/bccsolidwaste/Transaction/ProcessTaxCollectorFile?filename=</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1669,7 +1669,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">1</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\bccfil01.pascocountyfl.lan\Appdirs-QA\</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\bccfil01.pascocountyfl.lan\Appdirs\</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2062,7 +2062,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">BaseUrl="https://pascoatworkqa.pascocountyfl.lan/bccsolidwaste/Transaction/ProcessTaxCollectorFile?filename=Solid%20Waste%20Daily%2011252024.csv&amp;paymentType=1";AuthenticationMode=Credentials;JwtClaims='{
+                    <SSIS:Property SSIS:Name="Value">BaseUrl="https://pascoatwork.pascocountyfl.lan/bccsolidwaste/Transaction/ProcessTaxCollectorFile?filename=Solid%20Waste%20Daily%2011252024.csv&amp;paymentType=1";AuthenticationMode=Credentials;JwtClaims='{
   "header": {},
   "payload": {}
 }';JwtKeyFile=;CustomTokenCurlFile=;CustomTokenFindStrategy=JPath;CustomTokenFindExpression=;CustomTokenExpiry=0;AwsSignatureVersion=Version4;AwsSignatureMethod=HmacSHA1;AwsAccessKey=;AwsRegion=;AwsServiceName=;AzureOAuthType=ClientCredentials;AzureTenantId=;AzureClientId=;AzureCertificateLocation=Store;AzureCertificateThumbprint=;AzurePathToCertificate=;GoogleServiceAccount=;GoogleCertificateLocation=Store;GoogleCertificateThumbprint=;GooglePathToCertificate=;GoogleScope=;AzureScope=;PathToTokenFile=;AccessTokenRequestLocation=HttpHeader;Domain=;UserName=;ProxyMode=NoProxy;ProxyUsername=;ProxyServer=;ProxyServerPort=0;ThrottleRate=0;ThrottleRateUnit=PerSecond;ServiceTimeout=120;RetryOnIntermittentErrors=True;AllowAutoRedirect=True;DropAuthorizationHeaderOnRedirects=False;ChunkSize=0;CertificateLocation=Store;CertificateThumbprint=;PathToCertificate=;IgnoreCertificateErrors=False;CustomHeaders='{
@@ -2644,7 +2644,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">HostName=ftpqa.pascocountyfl.net;Port=22;ServerType=Unknown;AuthenticationType=Password;PathToKeyFile=;UserName=UtilSWvcronQA;ProxyType=None;ProxyUsername=;ProxyServer=;ProxyServerPort=0;Timeout=120;DownloadBufferSize=49152;DownloadQueueLength=8;UploadBufferSize=49152;UploadQueueLength=8;UseLargeBuffers=True;EnableTransferQueue=True;UseSmallPackets=False;UseCompression=True;MinimumRsaKeySize=1024;KeyExchangeAlgorithms="DiffieHellmanGroup14SHA1, DiffieHellmanGroupExchangeSHA1, DiffieHellmanGroupExchangeSHA256, ECDiffieHellmanNistP256, Curve25519, DiffieHellmanOakleyGroupSHA256, DiffieHellmanOakleyGroupSHA512";MacAlgorithms="SHA1, SHA256, SHA512";EncryptionAlgorithms="TripleDES, AES, Twofish";UseLegacyGroupExchange=True;UseLegacySshRsaClientAuthentication=False;PreferredHostKeyAlgorithm=RSA;HostKeyAlgorithms="Certificate, DSS, ECDsaNistP256, ED25519, RSA";KeepAliveInterval=0;PathToLogFile=;OutputLog=False;LogLevel=Off;TransferType=Binary;Encoding=65001;UseStreamedDataTransfer=True;UseAsyncDataTransfer=True</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">HostName=ftp.pascocountyfl.net;Port=22;ServerType=Unknown;AuthenticationType=Password;PathToKeyFile=;UserName=UtilSWvcron;ProxyType=None;ProxyUsername=;ProxyServer=;ProxyServerPort=0;Timeout=120;DownloadBufferSize=49152;DownloadQueueLength=8;UploadBufferSize=49152;UploadQueueLength=8;UseLargeBuffers=True;EnableTransferQueue=True;UseSmallPackets=False;UseCompression=True;MinimumRsaKeySize=1024;KeyExchangeAlgorithms="DiffieHellmanGroup14SHA1, DiffieHellmanGroupExchangeSHA1, DiffieHellmanGroupExchangeSHA256, ECDiffieHellmanNistP256, Curve25519, DiffieHellmanOakleyGroupSHA256, DiffieHellmanOakleyGroupSHA512";MacAlgorithms="SHA1, SHA256, SHA512";EncryptionAlgorithms="TripleDES, AES, Twofish";UseLegacyGroupExchange=True;UseLegacySshRsaClientAuthentication=False;PreferredHostKeyAlgorithm=RSA;HostKeyAlgorithms="Certificate, DSS, ECDsaNistP256, ED25519, RSA";KeepAliveInterval=0;PathToLogFile=;OutputLog=False;LogLevel=Off;TransferType=Binary;Encoding=65001;UseStreamedDataTransfer=True;UseAsyncDataTransfer=True</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2749,7 +2749,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">ftpqa.pascocountyfl.net</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">ftp.pascocountyfl.net</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -3185,7 +3185,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">UtilSWvcronQA</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">UtilSWvcron</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
