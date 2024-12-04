@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SW_TC_WalkIn_Processing"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{6385C1B5-998A-4154-8A8F-F94E131EC95F}">
+  DTS:VersionBuild="35"
+  DTS:VersionGUID="{1CD05A5A-C677-47A7-BEC8-50FA017835D2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,26 +40,39 @@
           ConnectByProxy="False">
           <Password
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOe+ZBSwhxkS90dci2uxVDwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABYXbTZ1Ylbrk1zql7/KbkhAAAAAASAAACgAAAAEAAAAFGYV37AhiVyY+AR8k/+LlsgAAAAQighDBdscHsb2g2WkE/8Rw9/uLd0pT7UDwq4HkgdUPMUAAAAe/FBPN/yFa7j7mV0Aj8Z03rnG+s</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOe+ZBSwhxkS90dci2uxVDwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB6JeDyfXLaPw653GevmVBqAAAAAASAAACgAAAAEAAAACW+TimxIAEmM0iDN5m3LEsgAAAAtbVHxgHUSyI0K0IZZN17fB+OrbyRF6AqUH3wtzpARAUUAAAAPOVlQlSG4Q8wIPbz1U5w+2fbrxQ</Password>
         </ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables>
-    <DTS:Variable
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
       DTS:CreationName=""
-      DTS:DTSID="{E28CB8F3-8D93-4726-A908-C6BEA8B661C2}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="var_API_BaseUrl">
-      <DTS:VariableValue
-        DTS:DataType="8">https://pascoatworkqa.pascocountyfl.lan/bccsolidwaste/Transaction/ProcessTaxCollectorFile?filename=</DTS:VariableValue>
-    </DTS:Variable>
+      DTS:DataType="8"
+      DTS:DTSID="{63A474BD-2F83-45C6-BFED-BEC7AC2F7740}"
+      DTS:ObjectName="prm_API_BaseUrl"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">https://pascoatworkqa.pascocountyfl.lan/bccsolidwaste/Transaction/ProcessTaxCollectorFile?filename=</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{78D21098-C10A-424D-9793-0153F71011F0}"
+      DTS:ObjectName="prm_Folder_Base"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">\\bccfil01.pascocountyfl.lan\Appdirs-QA\</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{EC529E7E-A2D1-4D8D-AB70-E843B72544E8}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="@[User::var_API_BaseUrl] + REPLACE(@[User::var_FileName],  &quot; &quot;, &quot;%20&quot;) +&quot;&amp;paymentType=1&quot;"
+      DTS:Expression="@[$Package::prm_API_BaseUrl]  + REPLACE(@[User::var_FileName],  &quot; &quot;, &quot;%20&quot;) +&quot;&amp;paymentType=1&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_API_Endpoint">
@@ -78,6 +91,8 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{03CB3413-62D2-4935-83E7-9F6D8D012D75}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::prm_Folder_Base] + &quot;Utilities\\Solid Waste\\PostedFiles\\Archive&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_Folder_Archive">
@@ -87,6 +102,8 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{C61CA49B-32B5-42FA-AA39-18A320A4AA6C}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::prm_Folder_Base] + &quot;Utilities\\Solid Waste\\Pay\\TaxCollector\\WalkIn&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_Folder_Destination">
