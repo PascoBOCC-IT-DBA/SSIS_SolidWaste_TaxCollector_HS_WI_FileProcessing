@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SW_TC_HighSpeed_Processing"
   DTS:PackageType="5"
-  DTS:VersionBuild="37"
-  DTS:VersionGUID="{A5AA4C0E-F9D0-4A88-B408-51AA6C46440D}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{BB5B2579-622D-4CA1-A5D9-862DFE27DAD7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,7 +40,7 @@
           ConnectByProxy="False">
           <Password
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOe+ZBSwhxkS90dci2uxVDwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAeTsgQjB7fHC9QYd4/cAi4AAAAAASAAACgAAAAEAAAAFbeKHao7IZQTBF4DMzpN6MgAAAASNgfrqtzY35iMeFeOoxBXwjUYDnHJHF7XUns2oF7BegUAAAAMwYLtqczeBZ7f5PSZ/t8AGuikoE</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOe+ZBSwhxkS90dci2uxVDwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD93Z3GnhDNDC/q1lwkieCpAAAAAASAAACgAAAAEAAAABitQm3dwUH4+a2n3LtWQ2QgAAAAi/NtQC1UQZNvqvg+wi6OwGji9rc5jqpm7GqIF6O4+AgUAAAA/JfenLZL6xkD8CnqeEZDpMgjSaI</Password>
         </ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -166,6 +166,7 @@
           <DTS:ObjectData>
             <FileSystemData
               TaskOperationType="MoveFile"
+              TaskOverwriteDestFile="True"
               TaskSourcePath="User::var_FullPath"
               TaskIsSourceVariable="True"
               TaskDestinationPath="User::var_Folder_Archive"
@@ -1070,15 +1071,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="212,41.6"
+          Size="212,42"
           Id="Package\Foreach Loop Container\Archive File After Processing"
           TopLeft="20.9999964485567,231.199997179508" />
         <NodeLayout
-          Size="212,41.6"
+          Size="212,42"
           Id="Package\Foreach Loop Container\HTTP Requester Task"
           TopLeft="20.9999964485567,26.6666652684743" />
         <NodeLayout
-          Size="212,41.6"
+          Size="212,42"
           Id="Package\Foreach Loop Container\Show API Endpoint"
           TopLeft="20.9999964485567,128.933331223991" />
         <EdgeLayout
@@ -1128,16 +1129,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="251.2,327.2"
-          Size="251.2,369.6"
+          PanelSize="251,327"
+          Size="251,370"
           Id="Package\Foreach Loop Container"
           TopLeft="40.8333311022984,131.733332417276" />
         <NodeLayout
-          Size="251.2,41.6"
+          Size="251,42"
           Id="Package\SFTP Retreive CSV Files"
           TopLeft="40.8333311022984,38.9999997287989" />
         <NodeLayout
-          Size="222.4,41.6"
+          Size="222,42"
           Id="Package\SFTP Retreive PDF Receipts"
           TopLeft="412,295" />
         <EdgeLayout
